@@ -13,7 +13,7 @@ const users = [
     });
 };
   
-  const logger = updatedUsers => console.table(updatedUsers);
+  const logger1 = updatedUsers => console.table(updatedUsers);
   
   /*
    * Сейчас работает так
@@ -24,5 +24,5 @@ const users = [
   /*
    * Должно работать так
    */
-  toggleUserState(users, 'Mango').then(logger);
-  toggleUserState(users, 'Lux').then(logger);
+  toggleUserState(users, 'Mango').then(logger1);
+  toggleUserState(users, 'Lux').then(logger1);
